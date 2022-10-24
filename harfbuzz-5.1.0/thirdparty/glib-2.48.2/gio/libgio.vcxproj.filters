@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+   <ClCompile Include="gappinfo.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gasynchelper.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gasyncinitable.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gasyncresult.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gbufferedinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gbufferedoutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gbytesicon.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gcancellable.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gcharsetconverter.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gcontextspecificgroup.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gconverter.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gconverterinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gconverteroutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gcredentials.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdatagrambased.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdatainputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdataoutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdrive.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdummyfile.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdummyproxyresolver.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdummytlsbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gemblem.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gemblemedicon.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfile.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfileattribute.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfileenumerator.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfileicon.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfileinfo.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfileinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfilemonitor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfilenamecompleter.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfileoutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfileiostream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfilterinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfilteroutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gicon.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="ginetaddress.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="ginetaddressmask.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="ginetsocketaddress.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="ginitable.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="ginputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gioerror.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="giomodule.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gioscheduler.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="giostream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gloadableicon.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gmount.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gmemoryinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gmemoryoutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gmountoperation.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnativevolumemonitor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnativesocketaddress.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnetworkaddress.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnetworking.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnetworkmonitor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnetworkmonitorbase.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnetworkservice.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="goutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gpermission.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gpollableinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gpollableoutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gpollableutils.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gpollfilemonitor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gproxy.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gproxyaddress.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gproxyaddressenumerator.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gproxyresolver.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gresolver.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gresource.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gresourcefile.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gseekable.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsimpleasyncresult.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsimpleiostream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsimplepermission.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocket.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketaddress.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketaddressenumerator.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketclient.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketconnectable.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketcontrolmessage.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketlistener.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketoutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsubprocesslauncher.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsubprocess.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocketservice.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsrvtarget.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsimpleproxyresolver.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtask.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtcpconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtcpwrapperconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gthreadedsocketservice.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gthemedicon.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gthreadedresolver.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlsbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlscertificate.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlsclientconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlsconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlsdatabase.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlsfiledatabase.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlsinteraction.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlspassword.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtlsserverconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdtlsconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdtlsclientconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdtlsserverconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gunionvolumemonitor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gvfs.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gvolume.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gvolumemonitor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gzlibcompressor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gzlibdecompressor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gioenumtypes.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glistmodel.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gliststore.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfiledescriptorbased.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gfdonotificationbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="ggtknotificationbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gapplication.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gapplicationcommandline.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gapplicationimpl-dbus.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gactiongroup.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gactionmap.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsimpleactiongroup.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gremoteactiongroup.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gactiongroupexporter.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusactiongroup.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gaction.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gpropertyaction.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsimpleaction.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gmenumodel.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gmenu.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gmenuexporter.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusmenumodel.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnotification.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnotificationbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gvdb\gvdb-reader.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdelayedsettingsbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gkeyfilesettingsbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gmemorysettingsbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gnullsettingsbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsettingsbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsettingsschema.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsettings-mapping.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsettings.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusutils.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusaddress.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusauthobserver.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusauth.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusauthmechanism.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusauthmechanismanon.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusauthmechanismexternal.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusauthmechanismsha1.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbuserror.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusconnection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusmessage.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusnameowning.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusnamewatching.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusproxy.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusprivate.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusintrospection.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusmethodinvocation.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusserver.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusinterface.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusinterfaceskeleton.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusobject.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusobjectskeleton.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusobjectproxy.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusobjectmanager.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusobjectmanagerclient.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusobjectmanagerserver.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gtestdbus.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="ghttpproxy.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glocalfile.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glocalfileenumerator.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glocalfileinfo.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glocalfileinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glocalfilemonitor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glocalfileoutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glocalfileiostream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="glocalvfs.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocks4proxy.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocks4aproxy.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gsocks5proxy.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="thumbnail-verify.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbusdaemon.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gdbus-daemon-generated.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gwin32registrykey.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gcontenttype-win32.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gwin32mount.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gwin32volumemonitor.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gwin32inputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gwin32outputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gwin32appinfo.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="gregistrysettingsbackend.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="win32\gwinhttpfile.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="win32\gwinhttpfileinputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="win32\gwinhttpfileoutputstream.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="win32\gwinhttpvfs.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="win32\gwin32fsmonitorutils.c"><Filter>Source Files</Filter></ClCompile>
+   <ClCompile Include="win32\gwin32filemonitor.c"><Filter>Source Files</Filter></ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ResourceCompile Include="gio.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

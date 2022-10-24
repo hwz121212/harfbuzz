@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\closures.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86\ffi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86\ffiw64.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prep_cif.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\raw_api.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\types.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ffi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fficonfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{b6574d8c-de23-4c41-975d-afd360464ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{28356317-9fdf-4d16-a6e6-3b51aeb71c42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\x86\win64_intel.S">
+      <Filter>src</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

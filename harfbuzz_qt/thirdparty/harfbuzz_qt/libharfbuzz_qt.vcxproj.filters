@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{50b584bd-0d35-4f51-a5fb-1681f5d30610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{591a8888-786e-4dcf-a0b4-2fe6be435230}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\harfbuzz.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-buffer-private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-dump.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-external.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-gdef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-gdef-private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-global.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-gpos.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-gpos-private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-gsub.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-gsub-private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-impl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-open.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-open-private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-shape.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-shaper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-shaper-private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-stream.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\harfbuzz-stream-private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\harfbuzz-buffer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\harfbuzz-gdef.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\harfbuzz-gpos.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\harfbuzz-gsub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\harfbuzz-impl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\harfbuzz-open.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\harfbuzz-shaper-all.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\harfbuzz-stream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

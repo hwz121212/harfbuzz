@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3427D54E-B9CF-43EC-8E53-6A92A4967A98}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libintldll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>libintl-0.19.8.1;libiconv-1.15;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>libintl-0.19.8.1;libiconv-1.15;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>LIBICONV_DLL;BUILDING_LIBINTL;BUILDING_DLL;PIC;DLL_EXPORT;_USRDLL;_DEBUG;_WIN64;UNICODE;_UNICODE;_WINDOWS;HAVE_CONFIG_H;ENABLE_RELOCATABLE=1;IN_LIBINTL;IN_LIBRARY;INSTALLDIR="c:\\usr";LIBDIR="c:\\usr\\lib";NO_XMALLOC;LOCALEDIR="c:\\usr\\locale";LOCALE_ALIAS_PATH="";DEPENDS_ON_LIBICONV=1;relocate=libintl_relocate;set_relocation_prefix=libintl_set_relocation_prefix;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\iconv-1.17\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>iconv.lib;advapi32.lib</AdditionalDependencies>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>LIBICONV_DLL;BUILDING_LIBINTL;BUILDING_DLL;PIC;DLL_EXPORT;_USRDLL;NDEBUG;_WIN64;UNICODE;_UNICODE;_WINDOWS;HAVE_CONFIG_H;ENABLE_RELOCATABLE=1;IN_LIBINTL;IN_LIBRARY;INSTALLDIR="c:\\usr";LIBDIR="c:\\usr\\lib";NO_XMALLOC;LOCALEDIR="c:\\usr\\locale";LOCALE_ALIAS_PATH="";DEPENDS_ON_LIBICONV=1;relocate=libintl_relocate;set_relocation_prefix=libintl_set_relocation_prefix;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\iconv-1.17\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>iconv.lib;advapi32.lib</AdditionalDependencies>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\eval-plural.h" />
+    <ClInclude Include="include\gettextP.h" />
+    <ClInclude Include="include\gmo.h" />
+    <ClInclude Include="include\hash-string.h" />
+    <ClInclude Include="include\libgnuintl.h" />
+    <ClInclude Include="include\libintl.h" />
+    <ClInclude Include="include\loadinfo.h" />
+    <ClInclude Include="include\lock.h" />
+    <ClInclude Include="include\os2compat.h" />
+    <ClInclude Include="include\plural-exp.h" />
+    <ClInclude Include="include\printf-args.h" />
+    <ClInclude Include="include\printf-parse.h" />
+    <ClInclude Include="include\tsearch.h" />
+    <ClInclude Include="include\vasnprintf.h" />
+    <ClInclude Include="include\vasnwprintf.h" />
+    <ClInclude Include="include\verify.h" />
+    <ClInclude Include="include\wprintf-parse.h" />
+    <ClInclude Include="include\xsize.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bindtextdom.c" />
+    <ClCompile Include="src\dcgettext.c" />
+    <ClCompile Include="src\dcigettext.c" />
+    <ClCompile Include="src\dcngettext.c" />
+    <ClCompile Include="src\dgettext.c" />
+    <ClCompile Include="src\dngettext.c" />
+    <ClCompile Include="src\explodename.c" />
+    <ClCompile Include="src\finddomain.c" />
+    <ClCompile Include="src\gettext.c" />
+    <ClCompile Include="src\hash-string.c" />
+    <ClCompile Include="src\intl-compat.c" />
+    <ClCompile Include="src\l10nflist.c" />
+    <ClCompile Include="src\langprefs.c" />
+    <ClCompile Include="src\loadmsgcat.c" />
+    <ClCompile Include="src\localealias.c" />
+    <ClCompile Include="src\localename.c" />
+    <ClCompile Include="src\lock.c" />
+    <ClCompile Include="src\log.c" />
+    <ClCompile Include="src\ngettext.c" />
+    <ClCompile Include="src\osdep.c" />
+    <ClCompile Include="src\plural-exp.c" />
+    <ClCompile Include="src\plural.c" />
+    <ClCompile Include="src\printf.c" />
+    <ClCompile Include="src\relocatable.c" />
+    <ClCompile Include="src\setlocale.c" />
+    <ClCompile Include="src\textdomain.c" />
+    <ClCompile Include="src\version.c" />
+    <ClCompile Include="src\xsize.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="intl.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

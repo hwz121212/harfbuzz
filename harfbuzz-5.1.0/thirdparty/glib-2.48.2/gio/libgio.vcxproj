@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0AF9F026-404C-46DA-955E-5D36415C4649}</ProjectGuid>
+    <RootNamespace>gio</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;..\glib;..\gmodule;$(SolutionDir)thirdparty\intl-0.19.8.1\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";_DEBUG</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gmodule.lib;gobject.lib;glib.lib;intl.lib;iconv.lib;ffi.lib;zlib.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;Advapi32.lib;Ole32.lib;Shell32.lib;User32.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..;..\glib;..\gmodule;$(SolutionDir)thirdparty\intl-0.19.8.1\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gmodule.lib;gobject.lib;glib.lib;intl.lib;iconv.lib;ffi.lib;zlib.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;Advapi32.lib;Ole32.lib;Shell32.lib;User32.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="gappinfo.c" />
+    <ClCompile Include="gasynchelper.c" />
+    <ClCompile Include="gasyncinitable.c" />
+    <ClCompile Include="gasyncresult.c" />
+    <ClCompile Include="gbufferedinputstream.c" />
+    <ClCompile Include="gbufferedoutputstream.c" />
+    <ClCompile Include="gbytesicon.c" />
+    <ClCompile Include="gcancellable.c" />
+    <ClCompile Include="gcharsetconverter.c" />
+    <ClCompile Include="gcontextspecificgroup.c" />
+    <ClCompile Include="gconverter.c" />
+    <ClCompile Include="gconverterinputstream.c" />
+    <ClCompile Include="gconverteroutputstream.c" />
+    <ClCompile Include="gcredentials.c" />
+    <ClCompile Include="gdatagrambased.c" />
+    <ClCompile Include="gdatainputstream.c" />
+    <ClCompile Include="gdataoutputstream.c" />
+    <ClCompile Include="gdrive.c" />
+    <ClCompile Include="gdummyfile.c" />
+    <ClCompile Include="gdummyproxyresolver.c" />
+    <ClCompile Include="gdummytlsbackend.c" />
+    <ClCompile Include="gemblem.c" />
+    <ClCompile Include="gemblemedicon.c" />
+    <ClCompile Include="gfile.c" />
+    <ClCompile Include="gfileattribute.c" />
+    <ClCompile Include="gfileenumerator.c" />
+    <ClCompile Include="gfileicon.c" />
+    <ClCompile Include="gfileinfo.c" />
+    <ClCompile Include="gfileinputstream.c" />
+    <ClCompile Include="gfilemonitor.c" />
+    <ClCompile Include="gfilenamecompleter.c" />
+    <ClCompile Include="gfileoutputstream.c" />
+    <ClCompile Include="gfileiostream.c" />
+    <ClCompile Include="gfilterinputstream.c" />
+    <ClCompile Include="gfilteroutputstream.c" />
+    <ClCompile Include="gicon.c" />
+    <ClCompile Include="ginetaddress.c" />
+    <ClCompile Include="ginetaddressmask.c" />
+    <ClCompile Include="ginetsocketaddress.c" />
+    <ClCompile Include="ginitable.c" />
+    <ClCompile Include="ginputstream.c" />
+    <ClCompile Include="gioerror.c" />
+    <ClCompile Include="giomodule.c" />
+    <ClCompile Include="gioscheduler.c" />
+    <ClCompile Include="giostream.c" />
+    <ClCompile Include="gloadableicon.c" />
+    <ClCompile Include="gmount.c" />
+    <ClCompile Include="gmemoryinputstream.c" />
+    <ClCompile Include="gmemoryoutputstream.c" />
+    <ClCompile Include="gmountoperation.c" />
+    <ClCompile Include="gnativevolumemonitor.c" />
+    <ClCompile Include="gnativesocketaddress.c" />
+    <ClCompile Include="gnetworkaddress.c" />
+    <ClCompile Include="gnetworking.c" />
+    <ClCompile Include="gnetworkmonitor.c" />
+    <ClCompile Include="gnetworkmonitorbase.c" />
+    <ClCompile Include="gnetworkservice.c" />
+    <ClCompile Include="goutputstream.c" />
+    <ClCompile Include="gpermission.c" />
+    <ClCompile Include="gpollableinputstream.c" />
+    <ClCompile Include="gpollableoutputstream.c" />
+    <ClCompile Include="gpollableutils.c" />
+    <ClCompile Include="gpollfilemonitor.c" />
+    <ClCompile Include="gproxy.c" />
+    <ClCompile Include="gproxyaddress.c" />
+    <ClCompile Include="gproxyaddressenumerator.c" />
+    <ClCompile Include="gproxyresolver.c" />
+    <ClCompile Include="gresolver.c" />
+    <ClCompile Include="gresource.c" />
+    <ClCompile Include="gresourcefile.c" />
+    <ClCompile Include="gseekable.c" />
+    <ClCompile Include="gsimpleasyncresult.c" />
+    <ClCompile Include="gsimpleiostream.c" />
+    <ClCompile Include="gsimplepermission.c" />
+    <ClCompile Include="gsocket.c" />
+    <ClCompile Include="gsocketaddress.c" />
+    <ClCompile Include="gsocketaddressenumerator.c" />
+    <ClCompile Include="gsocketclient.c" />
+    <ClCompile Include="gsocketconnectable.c" />
+    <ClCompile Include="gsocketconnection.c" />
+    <ClCompile Include="gsocketcontrolmessage.c" />
+    <ClCompile Include="gsocketinputstream.c" />
+    <ClCompile Include="gsocketlistener.c" />
+    <ClCompile Include="gsocketoutputstream.c" />
+    <ClCompile Include="gsubprocesslauncher.c" />
+    <ClCompile Include="gsubprocess.c" />
+    <ClCompile Include="gsocketservice.c" />
+    <ClCompile Include="gsrvtarget.c" />
+    <ClCompile Include="gsimpleproxyresolver.c" />
+    <ClCompile Include="gtask.c" />
+    <ClCompile Include="gtcpconnection.c" />
+    <ClCompile Include="gtcpwrapperconnection.c" />
+    <ClCompile Include="gthreadedsocketservice.c" />
+    <ClCompile Include="gthemedicon.c" />
+    <ClCompile Include="gthreadedresolver.c" />
+    <ClCompile Include="gtlsbackend.c" />
+    <ClCompile Include="gtlscertificate.c" />
+    <ClCompile Include="gtlsclientconnection.c" />
+    <ClCompile Include="gtlsconnection.c" />
+    <ClCompile Include="gtlsdatabase.c" />
+    <ClCompile Include="gtlsfiledatabase.c" />
+    <ClCompile Include="gtlsinteraction.c" />
+    <ClCompile Include="gtlspassword.c" />
+    <ClCompile Include="gtlsserverconnection.c" />
+    <ClCompile Include="gdtlsconnection.c" />
+    <ClCompile Include="gdtlsclientconnection.c" />
+    <ClCompile Include="gdtlsserverconnection.c" />
+    <ClCompile Include="gunionvolumemonitor.c" />
+    <ClCompile Include="gvfs.c" />
+    <ClCompile Include="gvolume.c" />
+    <ClCompile Include="gvolumemonitor.c" />
+    <ClCompile Include="gzlibcompressor.c" />
+    <ClCompile Include="gzlibdecompressor.c" />
+    <ClCompile Include="gioenumtypes.c" />
+    <ClCompile Include="glistmodel.c" />
+    <ClCompile Include="gliststore.c" />
+    <ClCompile Include="gfiledescriptorbased.c" />
+    <ClCompile Include="gfdonotificationbackend.c" />
+    <ClCompile Include="ggtknotificationbackend.c" />
+    <ClCompile Include="gapplication.c" />
+    <ClCompile Include="gapplicationcommandline.c" />
+    <ClCompile Include="gapplicationimpl-dbus.c" />
+    <ClCompile Include="gactiongroup.c" />
+    <ClCompile Include="gactionmap.c" />
+    <ClCompile Include="gsimpleactiongroup.c" />
+    <ClCompile Include="gremoteactiongroup.c" />
+    <ClCompile Include="gactiongroupexporter.c" />
+    <ClCompile Include="gdbusactiongroup.c" />
+    <ClCompile Include="gaction.c" />
+    <ClCompile Include="gpropertyaction.c" />
+    <ClCompile Include="gsimpleaction.c" />
+    <ClCompile Include="gmenumodel.c" />
+    <ClCompile Include="gmenu.c" />
+    <ClCompile Include="gmenuexporter.c" />
+    <ClCompile Include="gdbusmenumodel.c" />
+    <ClCompile Include="gnotification.c" />
+    <ClCompile Include="gnotificationbackend.c" />
+    <ClCompile Include="gvdb\gvdb-reader.c" />
+    <ClCompile Include="gdelayedsettingsbackend.c" />
+    <ClCompile Include="gkeyfilesettingsbackend.c" />
+    <ClCompile Include="gmemorysettingsbackend.c" />
+    <ClCompile Include="gnullsettingsbackend.c" />
+    <ClCompile Include="gsettingsbackend.c" />
+    <ClCompile Include="gsettingsschema.c" />
+    <ClCompile Include="gsettings-mapping.c" />
+    <ClCompile Include="gsettings.c" />
+    <ClCompile Include="gdbusutils.c" />
+    <ClCompile Include="gdbusaddress.c" />
+    <ClCompile Include="gdbusauthobserver.c" />
+    <ClCompile Include="gdbusauth.c" />
+    <ClCompile Include="gdbusauthmechanism.c" />
+    <ClCompile Include="gdbusauthmechanismanon.c" />
+    <ClCompile Include="gdbusauthmechanismexternal.c" />
+    <ClCompile Include="gdbusauthmechanismsha1.c" />
+    <ClCompile Include="gdbuserror.c" />
+    <ClCompile Include="gdbusconnection.c" />
+    <ClCompile Include="gdbusmessage.c" />
+    <ClCompile Include="gdbusnameowning.c" />
+    <ClCompile Include="gdbusnamewatching.c" />
+    <ClCompile Include="gdbusproxy.c" />
+    <ClCompile Include="gdbusprivate.c" />
+    <ClCompile Include="gdbusintrospection.c" />
+    <ClCompile Include="gdbusmethodinvocation.c" />
+    <ClCompile Include="gdbusserver.c" />
+    <ClCompile Include="gdbusinterface.c" />
+    <ClCompile Include="gdbusinterfaceskeleton.c" />
+    <ClCompile Include="gdbusobject.c" />
+    <ClCompile Include="gdbusobjectskeleton.c" />
+    <ClCompile Include="gdbusobjectproxy.c" />
+    <ClCompile Include="gdbusobjectmanager.c" />
+    <ClCompile Include="gdbusobjectmanagerclient.c" />
+    <ClCompile Include="gdbusobjectmanagerserver.c" />
+    <ClCompile Include="gtestdbus.c" />
+    <ClCompile Include="ghttpproxy.c" />
+    <ClCompile Include="glocalfile.c" />
+    <ClCompile Include="glocalfileenumerator.c" />
+    <ClCompile Include="glocalfileinfo.c" />
+    <ClCompile Include="glocalfileinputstream.c" />
+    <ClCompile Include="glocalfilemonitor.c" />
+    <ClCompile Include="glocalfileoutputstream.c" />
+    <ClCompile Include="glocalfileiostream.c" />
+    <ClCompile Include="glocalvfs.c" />
+    <ClCompile Include="gsocks4proxy.c" />
+    <ClCompile Include="gsocks4aproxy.c" />
+    <ClCompile Include="gsocks5proxy.c" />
+    <ClCompile Include="thumbnail-verify.c" />
+    <ClCompile Include="gdbusdaemon.c" />
+    <ClCompile Include="gdbus-daemon-generated.c" />
+    <ClCompile Include="gwin32registrykey.c" />
+    <ClCompile Include="gcontenttype-win32.c" />
+    <ClCompile Include="gwin32mount.c" />
+    <ClCompile Include="gwin32volumemonitor.c" />
+    <ClCompile Include="gwin32inputstream.c" />
+    <ClCompile Include="gwin32outputstream.c" />
+    <ClCompile Include="gwin32appinfo.c" />
+    <ClCompile Include="gregistrysettingsbackend.c" />
+    <ClCompile Include="win32\gwinhttpfile.c" />
+    <ClCompile Include="win32\gwinhttpfileinputstream.c" />
+    <ClCompile Include="win32\gwinhttpfileoutputstream.c" />
+    <ClCompile Include="win32\gwinhttpvfs.c" />
+    <ClCompile Include="win32\gwin32fsmonitorutils.c" />
+    <ClCompile Include="win32\gwin32filemonitor.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gio.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

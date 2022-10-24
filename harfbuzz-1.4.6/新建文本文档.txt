@@ -1,0 +1,51 @@
+f exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\hb-version.h (
+del ..\src\hb-version.h
+)
+if exist ..\src\hb-ot-shape-complex-use-machine.hh (
+del ..\src\hb-ot-shape-complex-use-machine.hh
+)
+if exist ..\src\hb-ot-shape-complex-indic-machine.hh (
+del ..\src\hb-ot-shape-complex-indic-machine.hh
+)
+if exist ..\src\hb-ot-shape-complex-myanmar-machine.hh (
+del ..\src\hb-ot-shape-complex-myanmar-machine.hh
+)
+if exist ..\src\hb-buffer-deserialize-json.hh (
+del ..\src\hb-buffer-deserialize-json.hh
+)
+if exist ..\src\hb-buffer-deserialize-text.hh (
+del ..\src\hb-buffer-deserialize-text.hh
+)
+if exist $(OutDir)\include\harfbuzz (
+rd /s /q $(OutDir)\include\harfbuzz
+cd ../
+cd $(ProjectDir)
+)
+if not exist .\src\hb-buffer-deserialize-json.hh (
+Ragel.exe -e -F1 -o ./src/hb-buffer-deserialize-json.hh ../src/hb-buffer-deserialize-json.rl
+)
+if not exist .\src\hb-buffer-deserialize-text.hh (
+Ragel.exe -e -F1 -o ./src/hb-buffer-deserialize-text.hh ../src/hb-buffer-deserialize-text.rl
+)
+if not exist .\src\hb-ot-shape-complex-indic-machine.hh (
+Ragel.exe -e -F1 -o ./src/hb-ot-shape-complex-indic-machine.hh ../src/hb-ot-shape-complex-indic-machine.rl
+)
+if not exist .\src\hb-ot-shape-complex-myanmar-machine.hh (
+Ragel.exe -e -F1 -o ./src/hb-ot-shape-complex-myanmar-machine.hh ../src/hb-ot-shape-complex-myanmar-machine.rl
+)
+if not exist .\src\hb-ot-shape-complex-use-machine.hh (
+Ragel.exe -e -F1 -o ./src/hb-ot-shape-complex-use-machine.hh ../src/hb-ot-shape-complex-use-machine.rl
+)
+
+
+
+
+mkdir $(OutDir)\include
+mkdir $(OutDir)\include\harfbuzz
+copy ..\src\*.h $(OutDir)\include\harfbuzz
+copy .\src\hb-version.h $(OutDir)\include\harfbuzz
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\harfbuzz.txt

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libharfbuzz", "thirdparty\harfbuzz-1.4.6\libharfbuzz.vcxproj", "{9DB795B7-E8BD-4846-82A5-C6D2577B1AAF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4BCA43B1-433B-3C12-98C5-9F6C05FD583D} = {4BCA43B1-433B-3C12-98C5-9F6C05FD583D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{3761FC04-07AA-4D55-91ED-31B817E227D2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfreetype", "thirdparty\freetype-2.12.1\libfreetype.vcxproj", "{4BCA43B1-433B-3C12-98C5-9F6C05FD583D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DB795B7-E8BD-4846-82A5-C6D2577B1AAF}.Debug|x64.ActiveCfg = Debug|x64
+		{9DB795B7-E8BD-4846-82A5-C6D2577B1AAF}.Debug|x64.Build.0 = Debug|x64
+		{9DB795B7-E8BD-4846-82A5-C6D2577B1AAF}.Release|x64.ActiveCfg = Release|x64
+		{9DB795B7-E8BD-4846-82A5-C6D2577B1AAF}.Release|x64.Build.0 = Release|x64
+		{4BCA43B1-433B-3C12-98C5-9F6C05FD583D}.Debug|x64.ActiveCfg = Debug|x64
+		{4BCA43B1-433B-3C12-98C5-9F6C05FD583D}.Debug|x64.Build.0 = Debug|x64
+		{4BCA43B1-433B-3C12-98C5-9F6C05FD583D}.Release|x64.ActiveCfg = Release|x64
+		{4BCA43B1-433B-3C12-98C5-9F6C05FD583D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DB795B7-E8BD-4846-82A5-C6D2577B1AAF} = {3761FC04-07AA-4D55-91ED-31B817E227D2}
+		{4BCA43B1-433B-3C12-98C5-9F6C05FD583D} = {3761FC04-07AA-4D55-91ED-31B817E227D2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
