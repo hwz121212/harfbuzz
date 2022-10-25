@@ -60,16 +60,7 @@
 #endif
 #endif
 
-/*
- * Data type for general conversion loop.
- */
-struct loop_funcs {
-  size_t (*loop_convert) (iconv_t icd,
-                          const char* * inbuf, size_t *inbytesleft,
-                          char* * outbuf, size_t *outbytesleft);
-  size_t (*loop_reset) (iconv_t icd,
-                        char* * outbuf, size_t *outbytesleft);
-};
+
 
 /*
  * Converters.

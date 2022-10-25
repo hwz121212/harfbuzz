@@ -30,6 +30,17 @@ typedef unsigned int state_t;
 typedef struct conv_struct * conv_t;
 
 /*
+ * Data type for general conversion loop.
+ */
+struct loop_funcs {
+	size_t(*loop_convert) (void* icd,
+		const char* * inbuf, size_t *inbytesleft,
+		char* * outbuf, size_t *outbytesleft);
+	size_t(*loop_reset) (void* icd,
+		char* * outbuf, size_t *outbytesleft);
+};
+
+/*
  * Data type for conversion multibyte -> unicode
  */
 struct mbtowc_funcs {
