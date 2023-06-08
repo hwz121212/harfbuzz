@@ -146,7 +146,7 @@ typedef int hb_atomic_int_impl_t;
 
 #elif !defined(HB_NO_MT)
 
-#define HB_ATOMIC_INT_NIL 1 /* Warn that fallback implementation is in use. */
+//#define HB_ATOMIC_INT_NIL 1 /* Warn that fallback implementation is in use. */
 
 typedef volatile int hb_atomic_int_impl_t;
 #define HB_ATOMIC_INT_IMPL_INIT(V) (V)
