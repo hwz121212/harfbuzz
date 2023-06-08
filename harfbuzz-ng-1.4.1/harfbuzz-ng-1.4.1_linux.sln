@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_lib", "0_lib", "{CF3DDE7E
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libharfbuzz-ng", "thirdparty\harfbuzz-ng-1.4.1\libharfbuzz-ng_linux.vcxproj", "{791642ED-9E59-4F42-927B-3562F869D9C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_dll", "1_dll", "{5C434526-3CA4-4FA4-9273-28BBF9BE8E6A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "harfbuzz-ng", "thirdparty\harfbuzz-ng-1.4.1\harfbuzz-ng_linux.vcxproj", "{B9ED4A9A-CE54-4E0D-BC45-4A8E6D381B51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -19,6 +23,10 @@ Global
 		{791642ED-9E59-4F42-927B-3562F869D9C1}.Debug|x64.Build.0 = Debug|x64
 		{791642ED-9E59-4F42-927B-3562F869D9C1}.Release|x64.ActiveCfg = Release|x64
 		{791642ED-9E59-4F42-927B-3562F869D9C1}.Release|x64.Build.0 = Release|x64
+		{B9ED4A9A-CE54-4E0D-BC45-4A8E6D381B51}.Debug|x64.ActiveCfg = Debug|x64
+		{B9ED4A9A-CE54-4E0D-BC45-4A8E6D381B51}.Debug|x64.Build.0 = Debug|x64
+		{B9ED4A9A-CE54-4E0D-BC45-4A8E6D381B51}.Release|x64.ActiveCfg = Release|x64
+		{B9ED4A9A-CE54-4E0D-BC45-4A8E6D381B51}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +34,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CF3DDE7E-7D55-4B62-AC96-E1E4220E2C61} = {BDFBC520-D31E-4548-95C0-1FD9F3EE2C66}
 		{791642ED-9E59-4F42-927B-3562F869D9C1} = {CF3DDE7E-7D55-4B62-AC96-E1E4220E2C61}
+		{5C434526-3CA4-4FA4-9273-28BBF9BE8E6A} = {BDFBC520-D31E-4548-95C0-1FD9F3EE2C66}
+		{B9ED4A9A-CE54-4E0D-BC45-4A8E6D381B51} = {5C434526-3CA4-4FA4-9273-28BBF9BE8E6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
