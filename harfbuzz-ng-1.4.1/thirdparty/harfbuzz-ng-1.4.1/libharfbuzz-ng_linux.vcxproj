@@ -116,7 +116,7 @@
     <ClCompile Include="src\hb-warning.cc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{791642ed-9e59-4f42-927b-3562f869d9c1}</ProjectGuid>
+    <ProjectGuid>{662E815E-3C9E-4AC6-AD5D-0265A3F4473B}</ProjectGuid>
     <Keyword>Linux</Keyword>
     <RootNamespace>linux_test</RootNamespace>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
